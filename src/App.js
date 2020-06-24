@@ -1,9 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Cards, Chart, CountryPicker } from './components';
+import styles from './App.module.css';
 
-function App() {
-  return <div className="App">Hello there</div>;
+import './App.css';
+import { fetchData } from './api/';
+
+class App extends React.Component {
+  state = {
+    data: {},
+  };
+
+  async componentDidMount() {
+    const data = await fetchData();
+    this.setState({ data });
+    //console.log(data);
+  }
+
+  render() {
+    const { data } = this.state;
+
+    return (
+      <div className={styles.container}>
+        <Cards data={data} />
+        <CountryPicker />
+        <Chart />
+      </div>
+    );
+  }
 }
 
 export default App;
