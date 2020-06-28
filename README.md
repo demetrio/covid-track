@@ -1,28 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://www.covid.demetrio.dev">
+    <img alt="Covid19 Tracker" src="./public/logo.png" />
+  </a>
+</p>
+<h1 align="center">
+  Covid19 Tracker
+</h1>
 
-## Available Scripts
+This is a small application to obtain information about the number of people affected, cured and deceased by the Covid19
 
-In the project directory, you can run:
+_You can find more info about the [API used here](https://covid19.mathdro.id/)._
 
-### `npm start`
+## 🚀 Do you want to use it?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.  **Start developing.**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    Navigate into the site’s directory and start it up.
 
-### `npm test`
+    ```shell
+    npm run start
+    ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💫 Deploy
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This website has been deployed with Netlify.
