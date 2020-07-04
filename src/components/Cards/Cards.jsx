@@ -20,7 +20,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   return (
     <Container>
       <Grid container spacing={5} justify="center">
-        <StyledGrid infected item component={Card} xs={12} md={3}>
+        <StyledGrid infected="true" item component={Card} xs={12} md={3}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Infected
@@ -45,7 +45,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
           </CardContent>
         </StyledGrid>
-        <StyledGrid recovered item component={Card} xs={12} md={3}>
+        <StyledGrid recovered="true" item component={Card} xs={12} md={3}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Recovered

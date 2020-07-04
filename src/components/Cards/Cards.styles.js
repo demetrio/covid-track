@@ -27,4 +27,8 @@ export const StyledGrid = styled(Grid)`
       : props.recovered
       ? '10px solid rgba(0, 255, 0, 0.5)'
       : '10px solid rgba(255, 0, 0, 0.5)'};
+
+  @media only screen and (max-width: 770px) {
+    margin: 2% 0 !important;
+  }
 `;
