@@ -22,9 +22,9 @@ export const StyledGrid = styled(Grid)`
   margin: 0 2% !important;
 
   border-bottom: ${props =>
-    props.infected
+    props.type === 'Infected'
       ? '10px solid rgba(0, 0, 255, 0.5)'
-      : props.recovered
+      : props.type === 'Recovered'
       ? '10px solid rgba(0, 255, 0, 0.5)'
       : '10px solid rgba(255, 0, 0, 0.5)'};
 
