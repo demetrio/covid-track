@@ -36,9 +36,15 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
   return (
     <Container>
-      <Grid key={data} container spacing={5} justify="center">
+      <Grid container spacing={5} justify="center">
         {data.map(({ type, data, text }) => (
-          <StyledGrid type={type} item component={Card} xs={12} md={3}>
+          <StyledGrid
+            key={data}
+            type={type}
+            item
+            component={Card}
+            xs={12}
+            md={3}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 {type}
